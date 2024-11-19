@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    /* Ensures padding and borders are included in element's total width and height */
+}
+
+body {
+    font-family: "Times New Roman", Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    /* Display links in a row */
+    margin: 0 15px;
+    /* Spacing between links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    /* Stack services vertically */
+    align-items: center;
+    /* Center the services */
+}
+
+.service {
+    background: #f8f8f8;
+    border: 2px solid #ccc;
+    /* Consistent border width */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 90%;
+    /* Full width on mobile */
+    max-width: 400px;
+    /* Limit width on larger screens */
+    min-height: 250px;
+    /* Set a minimum height for uniformity */
+    display: flex;
+    /* Use flexbox for inner content alignment */
+    flex-direction: column;
+    /* Stack content vertically */
+    justify-content: space-between;
+    /* Space out content evenly */
+}
+
+.service img {
+    max-width: 100%;
+    /* Responsive images */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.find-therapist-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    /* Increased padding for footer */
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    /* Gradient background for footer */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+    /* Same font size as services */
+}
+
+@media (min-width: 600px) {
+    nav ul li {
+        display: inline-block;
+        /* Keep links in a row on larger screens */
+    }
+    #services {
+        flex-direction: row;
+        /* Display services in a row on larger screens */
+        flex-wrap: wrap;
+        /* Allow wrapping of services */
+        justify-content: center;
+        /* Center services */
+    }
+    .service {
+        width: calc(33.33% - 20px);
+        /* Three services per row with spacing */
+        margin: 10px;
+        /* Space between services */
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find a Therapist</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/family.css" />
+</head>
+
+<body>
+    <div class="header">
+        <a href="services.html" class="back-arrow"><i class="fas fa-arrow-left"></i>
+      </a>
+        <span>Available Therapist</span>
+    </div>
+    <main>
+        <div class="container">
+            <div class="therapist-grid">
+                <div class="therapist-card">
+                    <img alt="Portrait of Dr. Jane Doe, Therapist" height="100" src="https://storage.googleapis.com/a1aa/image/WXfvaK1ExwxAfkVeo7kS4D25bcTd5XTpvcgKnxqpTqfy5v8OB.jpg" width="100" />
+                    <h3>Dr. Jane Doe</h3>
+                    <p>Specializes in anxiety and depression.</p>
+                    <button class="chat-button" onclick="openChatModal()">
+              Chat Now
+            </button>
+                </div>
+                <div class="therapist-card">
+                    <img alt="Portrait of Dr. John Smith, Therapist" height="100" src="https://storage.googleapis.com/a1aa/image/pdv6fQCMzCT0FS4t5mdB2qJnI8SnGoj3xxTlzlyAjXbMfLvTA.jpg" width="100" />
+                    <h3>Dr. John Smith</h3>
+                    <p>Expert in family therapy.</p>
+                    <button class="chat-button" onclick="openChatModal()">
+              Chat Now
+            </button>
+                </div>
+                <div class="therapist-card">
+                    <img alt="Portrait of Dr. Emily White, Licensed Psychologist" height="100" src="https://storage.googleapis.com/a1aa/image/CvxpxUOYlzqTLVXfGHfd002b62SWLY23L1exEAKyni2e5v8OB.jpg" width="100" />
+                    <h3>Dr. Emily White</h3>
+                    <p>Specializes in cognitive behavioral therapy.</p>
+                    <button class="chat-button" onclick="openChatModal()">
+              Chat Now
+            </button>
+                </div>
+                <div class="therapist-card">
+                    <img alt="Portrait of Dr. Michael Brown, Psychiatrist" height="100" src="https://storage.googleapis.com/a1aa/image/ypSl0fHplz1zEqYp0jLeM38fuS9TZdIWeeCfnoKbdXjonfl3JA.jpg" width="100" />
+                    <h3>Dr. Michael Brown</h3>
+                    <p>Expert in medication management and therapy.</p>
+                    <button class="chat-button" onclick="openChatModal()">
+              Chat Now
+            </button>
+                </div>
+                <div class="therapist-card">
+                    <img alt="Portrait of Dr. Sarah Johnson, Clinical Social Worker" height="100" src="https://storage.googleapis.com/a1aa/image/ae3nbgLHq3TWFCU3fMQLssSf4WIOQKvecNjHKbjCM6zr5v8OB.jpg" width="100" />
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p>Specializes in trauma and PTSD.</p>
+                    <button class="chat-button" onclick="openChatModal()">
+              Chat Now
+            </button>
+                </div>
+                <div class="therapist-card">
+                    <img alt="Portrait of Dr. David Lee, Marriage Counselor" height="100" src="https://storage.googleapis.com/a1aa/image/m2efkalkDxvezofXeRi5Hxfu7GCOWq23w6BHjfAVpfgjWeXeOB.jpg" width="100" />
+                    <h3>Dr. David Lee</h3>
+                    <p>Expert in couples therapy and relationships.</p>
+                    <button class="chat-button" onclick="openChatModal()">
+              Chat Now
+            </button>
+                </div>
+                <div class="therapist-card">
+                    <img alt="Portrait of Dr. Lisa Green, Child Psychologist" height="100" src="https://storage.googleapis.com/a1aa/image/A5SwnLC6p95eayo5H6NaEype5i1WqSCpQFfzScDNjB3y8XeOB.jpg" width="100" />
+                    <h3>Dr. Lisa Green</h3>
+                    <p>Specializes in child and adolescent therapy.</p>
+                    <button class="chat-button" onclick="openChatModal()">
+              Chat Now
+            </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-modal" id="chatModal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeChatModal()">&times;</span>
+                <h2 id="modalTitle">Chat with a Therapist</h2>
+                <div class="chat-history" id="chatHistory"></div>
+                <textarea id="userInput" placeholder="Type your message here..."></textarea>
+                <button class="send-button" id="sendButton">Send</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/family.js"></script>
+</body>
+
+</html>

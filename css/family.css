@@ -1,0 +1,199 @@
+body {
+    font-family: "Times New Roman", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the text */
+    position: relative;
+    /* Position relative for absolute positioning of the arrow */
+    padding: 10px;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    /* Gradient background */
+    color: white;
+    /* Optional: change text color for better contrast */
+}
+
+.back-arrow {
+    position: absolute;
+    /* Position the arrow absolutely */
+    left: 20px;
+    /* Adjust the distance from the left */
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust for vertical centering */
+    text-decoration: none;
+    /* Remove underline from link */
+    color: white;
+    /* Change arrow color to white for contrast */
+    font-size: 20px;
+    /* Font size for the arrow */
+}
+
+.container {
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.therapist-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.therapist-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.therapist-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.therapist-card h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.therapist-card p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.chat-button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.chat-button:hover {
+    background-color: #5753d6;
+}
+
+
+/* Chat Modal Styles */
+
+.chat-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.chat-history {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.send-button {
+    background: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.send-button:hover {
+    background: #5753d6;
+}
+
+.chat-history {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    /* Limit width */
+}
+
+.user-message {
+    align-self: flex-end;
+    /* Align user messages to the right */
+    background-color: #d1e7dd;
+    /* Light green for user messages */
+}
+
+.therapist-message {
+    align-self: flex-start;
+    /* Align therapist messages to the left */
+    background-color: #f8d7da;
+    /* Light red for therapist messages */
+}
